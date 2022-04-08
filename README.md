@@ -1,6 +1,6 @@
 # digsystems repository
 ### Python implementations of different digital circuits
 - Logical gates (so far,**not gate only**)
-- Mux
+- Mux/Demux
 - Decoder
 - 7 segments
