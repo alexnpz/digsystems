@@ -2,11 +2,6 @@
 
 from random import sample
 
-# a = bin(28)
-# b = bin(10))
-
-# print(format(c,'b'))
-
 while True:
     try:
         number_inputs = int(input('Define the number of inputs :'))
@@ -16,7 +11,6 @@ while True:
         print ('Number of inputs must be a natural number')
 
 inputs = sample(range(100,999),int(number_inputs))
-print(inputs)
 strwordlist = list()
 lengthlist = list()
 # If possible, use a dict for the values
@@ -28,7 +22,6 @@ for iter in inputs:
     lengthlist.append(len(strword))
 
 print(lengthlist)
-#print(dictstrword)
 mask_and = max(lengthlist) * '1'  
 mask_or = max(lengthlist) * '0'
 print(mask_and)
