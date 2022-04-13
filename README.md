@@ -4,3 +4,4 @@
 - Mux/Demux
 - Decoder
 - 7 segments
+- Simplest adder
