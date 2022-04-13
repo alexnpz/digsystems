@@ -1,5 +1,5 @@
 #!/bin/bash
-# We wil need to add this command later on console chmod u+x deploy.sh
+# We wil need to add this command later on console chmod u+x singlefile2git.sh
 echo Script to update a single file to Github
 echo We will show you the files untrack
 git status
