@@ -1,4 +1,4 @@
-import random
+from random import sample
 # Implementation of not, according an input. This is, similar to bitwise operation
 arrayinvert = list()
 def invertgate(input):
@@ -19,7 +19,7 @@ while True:
             break
     except:
         print ('Number of inputs must be a natural number')
-inputs = random.sample(range(100,999),int(number_inputs))
+inputs = sample(range(100,999),int(number_inputs))
 for value in inputs:
     print(f'The value of the input is {value}')
     invertgate(value)

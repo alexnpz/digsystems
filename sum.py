@@ -1,5 +1,5 @@
 # Raw implementation of sum, without carrying bits and inputs at digital gate
-import random
+from random import sample
 
 sumt = 0b0
 while True:
@@ -9,7 +9,7 @@ while True:
             break
     except:
         print ('Number of inputs must be a natural number')
-inputs = random.sample(range(100,999),int(number_inputs))
+inputs = sample(range(100,999),int(number_inputs))
 for value in inputs:
     sumt += value
 print(format(sumt,'b'))

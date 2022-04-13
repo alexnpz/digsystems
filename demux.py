@@ -1,7 +1,7 @@
 # Implementation of a demultiplexer
 # Use of a dictionary to keep old values and not replace them with every iteration
 # Use of dict comprehension
-import random
+from random import randint
 def validations (input):
     if input == 'q':
         raise SystemExit ('Exit Program')
@@ -13,7 +13,7 @@ def validations (input):
         raise SystemExit('The selector must be greater than 0')
     return int(input)
 
-inputs = random.randint(0,1000)
+inputs = randint(0,1000)
 output_selector = input('Introduce the number of selectors :')
 output_selector = validations(output_selector)
 output_channels = 2**int(output_selector)
@@ -28,4 +28,4 @@ while True:
     else:
         dictchannout [channel_selected].append(inputs)
         print(dictchannout)
-    inputs = random.randint(0,1000)
+    inputs = randint(0,1000)

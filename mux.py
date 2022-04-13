@@ -10,7 +10,7 @@
 # with open (filename, encoding = 'utf-8) as f:
 # Using a random function for creating inputs
 
-import random
+from random import sample
 list_outputs = list()
 print('Implementation of a MUX using a random generated input')
 
@@ -46,7 +46,7 @@ while True:
     value_selector = validations(value_selector)
     print(value_selector)
     if value_selector > 0 and value_selector <= channels - 1 :
-        inputs = random.sample(range(1000),channels)
+        inputs = sample(range(1000),channels)
         print (inputs)
         list_outputs.append(mux(value_selector,inputs))
         print(' The values multiplexed in order are :' + str(list_outputs))
