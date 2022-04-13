@@ -1,7 +1,7 @@
 # Implementation of generalized and, or, future -> nand, nor, xor and xand, for n inputs
 
 from random import sample
-
+a = 10
 while True:
     try:
         number_inputs = int(input('Define the number of inputs :'))
